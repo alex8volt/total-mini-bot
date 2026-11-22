@@ -1,6 +1,11 @@
 {
- "ts": "2026-11-22T17:35:00+00:00",
+ "ts": "",
+ "note": "бот на ноутбуке ещё не запускался",
  "balance": 50.0,
  "pnl": 0.0,
- "test": "round-trip"
+ "bets": 0,
+ "open": 0,
+ "how_to_start": "python -m bot.cli run --interval 21600 --browser",
+ "site": "https://alex8volt.github.io/total-mini-bot/",
+ "repo": "alex8volt/total-mini-bot"
 }
