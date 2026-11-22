@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бот тоталов · настольный теннис</title>
+<style>
+:root{
+  --bg:#f4f5f7; --card:#ffffff; --line:#e3e6ea; --txt:#16191d; --muted:#6b7280;
+  --accent:#2563eb; --accent-soft:#eef2ff; --green:#0f9d58; --green-soft:#e8f6ee;
+  --red:#d93025; --red-soft:#fdeceb; --amber:#b45309; --amber-soft:#fdf3e3;
+  --radius:14px; --shadow:0 1px 2px rgba(16,24,40,.04),0 6px 20px rgba(16,24,40,.05);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--txt); font:15px/1.5 -apple-system,BlinkMacSystemFont,
+  "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:18px}
+h1{font-size:21px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:13px}
+.sub b{color:var(--txt);font-weight:600}
+.btn{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:10px;
+  padding:8px 14px;font:inherit;font-size:13px;cursor:pointer;box-shadow:var(--shadow)}
+.btn:hover{border-color:#c9cfd8}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;margin-bottom:14px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:8px 15px;font-size:13.5px;cursor:pointer;color:var(--muted);white-space:nowrap;
+  box-shadow:var(--shadow);transition:.15s}
+.tab:hover{color:var(--txt)}
+.tab.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.tab small{display:block;font-size:11px;opacity:.75;font-weight:400;line-height:1.2}
+.note{background:var(--accent-soft);border:1px solid #dbe3fb;border-radius:var(--radius);
+  padding:13px 16px;margin-bottom:14px;font-size:13.5px;line-height:1.55;color:#1e3a8a}
+.note b{display:block;margin-bottom:4px;color:#1e40af;font-size:13px}
+.note p{margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.card .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.card .v{font-size:24px;font-weight:650;margin-top:4px;letter-spacing:-.02em}
+.card .d{font-size:12px;color:var(--muted);margin-top:2px}
+.pos{color:var(--green)} .neg{color:var(--red)} .zero{color:var(--muted)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);margin-bottom:16px;overflow:hidden}
+.panel h2{margin:0;padding:14px 16px;font-size:15px;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+.panel h2 .hint{font-size:12px;color:var(--muted);font-weight:400;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);
+  padding:10px 12px;background:#fafbfc;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid #f0f1f3;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafbfc}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.b-open{background:var(--amber-soft);color:var(--amber)}
+.b-won{background:var(--green-soft);color:var(--green)}
+.b-lost{background:var(--red-soft);color:var(--red)}
+.b-push{background:#eef1f5;color:var(--muted)}
+.match{font-weight:600}
+.league{color:var(--muted);font-size:12px}
+.mono{font-variant-numeric:tabular-nums}
+.bar{height:5px;border-radius:3px;background:#eceef1;width:74px;overflow:hidden;display:inline-block;vertical-align:middle}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.empty{padding:26px 16px;text-align:center;color:var(--muted);font-size:13.5px}
+footer{color:var(--muted);font-size:12px;text-align:center;margin-top:22px;line-height:1.7}
+footer a{color:var(--accent)}
+@media(max-width:760px){
+  .wrap{padding:14px 11px 44px}
+  h1{font-size:18px}
+  .card .v{font-size:20px}
+  table thead{display:none}
+  table,tbody,tr,td{display:block;width:100%}
+  tr{border-bottom:1px solid var(--line);padding:8px 0}
+  tr td{border:none;padding:4px 12px;display:flex;justify-content:space-between;gap:12px;text-align:right}
+  tr td:before{content:attr(data-l);color:var(--muted);font-size:11.5px;text-transform:uppercase;
+    letter-spacing:.03em;text-align:left;flex:0 0 auto}
+  tr td.match,tr td.league{display:block;text-align:left}
+  tr td.match:before,tr td.league:before{display:block;margin-bottom:2px}
+  tr td.match .league{display:inline;margin-left:6px}
+}
+</style>
+</head><body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Бот тоталов · настольный теннис</h1>
+      <div class="sub">Линия 1xBet · 6 правил параллельно · бумажный журнал ·
+        обновлено <b id="gen">22.11.2026 17:15</b></div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="btn" id="reload">Обновить</button>
+      <button class="btn primary" id="tg">Телеграм</button>
+    </div>
+  </header>
+  <nav class="tabs" id="tabs"><button class="tab on" data-rule="all">Все правила<small>0 ставок</small></button><button class="tab" data-rule="last10">10 игр пары<small>0 ставок · +0,00 ю.</small></button><button class="tab" data-rule="home">Хозяева<small>0 ставок · +0,00 ю.</small></button><button class="tab" data-rule="away">Гости<small>0 ставок · +0,00 ю.</small></button><button class="tab" data-rule="combined">Общий пул<small>0 ставок · +0,00 ю.</small></button><button class="tab" data-rule="avg">Среднее<small>0 ставок · +0,00 ю.</small></button><button class="tab" data-rule="avg_total">Средний тотал<small>0 ставок · +0,00 ю.</small></button></nav>
+  
+<div class="pane" data-pane="all">
+  
+<div class="note"><b>Как всё устроено</b>
+  <p>Все шесть правил считаются параллельно для каждого матча. Каждое сработавшее правило — отдельная бумажная ставка, поэтому через несколько дней видно, какое из правил оказалось плюсовым.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · все правила</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+  <section class="panel"><h2>Свежие линии <span class="hint">0 матчей</span></h2>
+    <div class="empty">Линий пока нет — бот ещё не собирал.</div></section>
+</div>
+<div class="pane" data-pane="last10" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>Берём последние 10 игр пары вместе (хозяева и гости вместе, по времени) и считаем, в скольких из них сумма очков была строго больше линии тотала. Если доля ≥ порога — матч попадает в ставку. Это буквальное прочтение исходной идеи «заходило больше 70% последних 10 игр». Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · 10 игр пары</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+<div class="pane" data-pane="home" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>То же, но только по одному игроку: последние 10 его игр и доля матчей, где он набрал больше линии. Проверяет форму одного игрока, а не пары. Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · Хозяева</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+<div class="pane" data-pane="away" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>То же для второго игрока: последние 10 его игр и доля тоталов выше линии. Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · Гости</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+<div class="pane" data-pane="combined" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>Пул из 10 игр каждого игрока (20 игр вместе). Выборка вдвое больше — доля заходов устойчивее к случайным сериям. Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · Общий пул</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+<div class="pane" data-pane="avg" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>Среднее двух индивидуальных долей (хозяева и гости). Сглаживает перекос, когда у одного из игроков история удачная, а у другого нет. Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · Среднее</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+<div class="pane" data-pane="avg_total" hidden>
+  
+<div class="note"><b>Как работает это правило</b>
+  <p>Не доля, а сами очки: средний тотал последних игр игроков сравнивается с линией. Если средний тотал выше линии хотя бы на avg_margin очков — матч берётся. Устойчивее к регрессии к среднему, чем «заходило в 70% случаев». Порог: доля заходов ≥ 70%, минимум 8 игр в истории, иначе сигнал не засчитывается. Для этого правила условие другое: средний тотал игроков должен быть выше линии хотя бы на 0.0 очка.</p></div>
+<div class="cards">
+  <div class="card"><div class="k">Баланс · Средний тотал</div>
+    <div class="v">50,00 <span class="d">ю.</span></div>
+    <div class="d">старт 50 · ставка 1 ю.</div></div>
+  <div class="card"><div class="k">Ставок всего</div>
+    <div class="v">0</div>
+    <div class="d">рассчитано 0 · в игре 0</div></div>
+  <div class="card"><div class="k">P&amp;L</div>
+    <div class="v zero">+0,00 <span class="d">ю.</span></div>
+    <div class="d">в обороте 0,00 ю.</div></div>
+  <div class="card"><div class="k">ROI</div>
+    <div class="v zero">0%</div>
+    <div class="d">безубыточность 0%</div></div>
+  <div class="card"><div class="k">Проход</div>
+    <div class="v">0%</div>
+    <div class="d">выиграно 0 · проиграно 0</div></div>
+</div>
+  
+<section class="panel"><h2>Не рассчитано (в игре) <span class="hint">0 ставок</span></h2>
+  <div class="empty">Открытых ставок нет — бот ждёт сигнала.</div></section>
+<section class="panel"><h2>Журнал: рассчитано <span class="hint">0 ставок</span></h2>
+  <div class="empty">Рассчитанных ставок пока нет.</div></section>
+</div>
+  <footer>
+    Имитация кабинета: старт 50 ю., ставка 1 ю.
+    · порог 70% · режим «any»<br>
+    Данные обновляет бот на ноутбуке; страница сама подтягивает свежий data.json.
+  </footer>
+</div>
+<script>
+const DATA = {"version": "2.0", "generated": "22.11.2026 17:15", "generated_iso": "2026-11-22T17:15:53+00:00", "start_balance": 50.0, "balance": 50.0, "pnl": 0, "roi": 0.0, "hit_rate": 0.0, "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "staked": 0, "avg_odds": 0.0, "rules": [{"rule": "last10", "title": "10 игр пары", "hint": "10 последних игр пары вместе: доля тоталов выше линии", "how": "Берём последние 10 игр пары вместе (хозяева и гости вместе, по времени) и считаем, в скольких из них сумма очков была строго больше линии тотала. Если доля ≥ порога — матч попадает в ставку. Это буквальное прочтение исходной идеи «заходило больше 70% последних 10 игр».", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}, {"rule": "home", "title": "Хозяева", "hint": "10 последних игр хозяина: доля тоталов выше линии", "how": "То же, но только по одному игроку: последние 10 его игр и доля матчей, где он набрал больше линии. Проверяет форму одного игрока, а не пары.", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}, {"rule": "away", "title": "Гости", "hint": "10 последних игр гостя: доля тоталов выше линии", "how": "То же для второго игрока: последние 10 его игр и доля тоталов выше линии.", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}, {"rule": "combined", "title": "Общий пул", "hint": "пул из 10 игр каждого (20 игр): доля тоталов выше линии", "how": "Пул из 10 игр каждого игрока (20 игр вместе). Выборка вдвое больше — доля заходов устойчивее к случайным сериям.", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}, {"rule": "avg", "title": "Среднее", "hint": "среднее двух индивидуальных долей заходов", "how": "Среднее двух индивидуальных долей (хозяева и гости). Сглаживает перекос, когда у одного из игроков история удачная, а у другого нет.", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}, {"rule": "avg_total", "title": "Средний тотал", "hint": "средний тотал последних игр против линии (запас в очках)", "how": "Не доля, а сами очки: средний тотал последних игр игроков сравнивается с линией. Если средний тотал выше линии хотя бы на avg_margin очков — матч берётся. Устойчивее к регрессии к среднему, чем «заходило в 70% случаев».", "bets": 0, "settled": 0, "open": 0, "wins": 0, "losses": 0, "pushes": 0, "hit_rate": 0.0, "pnl": 0, "staked": 0, "roi": 0.0, "balance": 50.0, "avg_odds": 0.0}], "open_bets": [], "settled_bets": [], "signals": [], "site": "https://y1cguofck8tdu.space.mcode.io", "data_url": "", "telegram_username": "Laboratory365bot", "mode": "any", "threshold": 0.7, "min_games": 8, "avg_margin": 0.0, "stake": 1.0};
+document.getElementById('tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.tab'); if (!btn) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t === btn));
+  const key = btn.dataset.rule;
+  document.querySelectorAll('.pane').forEach(p => p.hidden = p.dataset.pane !== key);
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+function fmtNum(v, d) { return v === null || v === undefined ? '—' : Number(v).toFixed(d).replace('.', ','); }
+const DATA_URL = DATA.data_url || 'data.json';
+async function refresh() {
+  const btn = document.getElementById('reload'); btn.textContent = '…';
+  try {
+    const r = await fetch(DATA_URL + (DATA_URL.indexOf('?') >= 0 ? '&' : '?') + '_=' + Date.now(),
+                          {cache:'no-store'});
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    if (d.generated && d.generated !== document.getElementById('gen').textContent) {
+      location.reload();
+    } else {
+      btn.textContent = 'Обновлено';
+      setTimeout(() => btn.textContent = 'Обновить', 2000);
+    }
+  } catch (e) {
+    btn.textContent = 'Нет data.json';
+    setTimeout(() => btn.textContent = 'Обновить', 2500);
+  }
+}
+document.getElementById('reload').onclick = refresh;
+// при открытии страницы подтягиваем свежие данные, если источник задан
+if (DATA.data_url) { refresh(); }
+document.getElementById('tg').onclick = () => {
+  window.open('https://t.me/' + (DATA.telegram_username || 'Laboratory365bot'), '_blank');
+};
+</script>
+</body></html>
