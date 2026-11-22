@@ -1,43 +1,18 @@
 {
- "version": "1.0.5",
- "ts": "2026-11-22T18:03:39+00:00",
- "checked": 0,
- "matched": 0,
- "triggered": 0,
- "new_bets": 0,
+ "version": "1.0.6",
+ "ts": "2026-11-22T18:15:22+00:00",
+ "checked": 3,
+ "matched": 3,
+ "triggered": 3,
+ "new_bets": 3,
  "settled": 0,
  "open": 0,
  "balance": 50.0,
  "pnl": 0,
  "roi": 0.0,
  "providers": {
-  "sportsbet": 0,
-  "ts_browser": 0
+  "ts": 6
  },
- "diagnostics": {
-  "error_ts_browser": "name 'state' is not defined",
-  "error_sportsbet": "name 'state' is not defined",
-  "line_ts_browser": {
-   "pages_ok": 6,
-   "cards": 90,
-   "cards_by_league": 72,
-   "cards_with_totals": 84,
-   "leagues": [
-    "Кубок ТТ. Чехия",
-    "Сетка Кап. Прага",
-    "Сетка Кап. Молдова",
-    "Сетка Кап",
-    "Лига Про",
-    "Мастерс. Беларусь",
-    "Кубок ТТ. Польша",
-    "Сетка Кап. Женщины",
-    "Лига Про. Минск",
-    "Сетка Кап. Париж",
-    "Лига Про. Чехия"
-   ],
-   "sample_card": "турнир: Мастерс. Беларусь | тоталы: [112.5]",
-   "errors": []
-  }
- },
+ "diagnostics": {},
  "last_error": null
 }
