@@ -1,11 +1,11 @@
 {
- "ts": "",
- "note": "бот на ноутбуке ещё не запускался",
- "balance": 50.0,
- "pnl": 0.0,
- "bets": 0,
+ "ts": "2026-11-22T17:45:56+00:00",
+ "checked": 0,
+ "new_bets": 0,
+ "settled": 0,
  "open": 0,
- "how_to_start": "python -m bot.cli run --interval 21600 --browser",
- "site": "https://alex8volt.github.io/total-mini-bot/",
- "repo": "alex8volt/total-mini-bot"
+ "balance": 50.0,
+ "pnl": 0,
+ "roi": 0.0,
+ "last_error": null
 }
