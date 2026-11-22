@@ -1,36 +1,3 @@
-00:05:42 INFO    дополнительный источник истории: sofascore
-00:05:42 INFO    дополнительный источник истории: sofascore
-00:05:44 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-00:05:44 INFO    источник коэффициентов: sportsbet.io
-00:06:10 INFO    дополнительный источник истории: sofascore
-00:06:12 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-00:06:12 INFO    источник коэффициентов: sportsbet.io
-00:06:12 INFO    сбор линии: ts_browser за 2026-11-22
-00:06:12 INFO    ts_browser: линий тоталов получено: 72
-00:06:38 INFO    сбор линии: sportsbet за 2026-11-22
-00:06:38 INFO    sportsbet: линий тоталов получено: 0
-00:06:38 INFO    дополнительный источник истории: sofascore
-00:06:40 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-00:06:40 INFO    источник коэффициентов: sportsbet.io
-00:06:40 INFO    сбор линии: ts_browser за 2026-11-23
-00:06:40 INFO    ts_browser: линий тоталов получено: 72
-00:06:40 INFO    сбор линии: sportsbet за 2026-11-23
-00:06:40 INFO    sportsbet: линий тоталов получено: 0
-00:06:40 INFO    дополнительный источник истории: sofascore
-00:52:55 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x0000000005AEBB80 (otid=0x0000000004283BA0) current active started main>
-	Expected: <greenlet.greenlet object at 0x0000000005729C80 (otid=0x0000000004282E60) suspended active started main>)
-01:01:45 INFO    удалённая команда получена: полный цикл v1.1.1: линия браузером, ТБ/ТМ по 6 правилам, ставки, панель, state.json со счётчиками
-01:01:45 INFO    дополнительный источник истории: sofascore
-01:02:00 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-01:02:00 INFO    источник коэффициентов: sportsbet.io
-01:02:00 INFO    сбор линии: ts_browser за 2026-11-22
-01:02:00 INFO    ts_browser: линий тоталов получено: 47
-01:04:25 INFO    сбор линии: sportsbet за 2026-11-22
-01:04:25 INFO    sportsbet: линий тоталов получено: 0
-01:04:25 INFO    дополнительный источник истории: sofascore
-01:04:55 INFO    удалённая команда на старте: полный цикл v1.1.1: линия браузером, ТБ/ТМ по 6 правилам, ставки, панель, state.json со счётчиками
-01:04:55 INFO    дополнительный источник истории: sofascore
 01:04:58 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
 01:04:58 INFO    источник коэффициентов: sportsbet.io
 01:04:58 INFO    сбор линии: ts_browser за 2026-11-22
@@ -58,3 +25,36 @@
 01:07:46 INFO    дополнительный источник истории: sofascore
 01:07:48 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
 01:07:48 INFO    источник коэффициентов: sportsbet.io
+01:08:14 INFO    дополнительный источник истории: sofascore
+01:08:16 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+01:08:16 INFO    источник коэффициентов: sportsbet.io
+01:08:16 INFO    сбор линии: ts_browser за 2026-11-22
+01:08:16 INFO    ts_browser: линий тоталов получено: 69
+01:08:18 WARNING ставка не сохранена (avg_total, 3e279f39af4f364c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:18 WARNING ставка не сохранена (avg_total Дмитрий Кулагин Максим Туркану)
+01:08:27 WARNING ставка не сохранена (avg_total, c80fdf07ad12958c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:27 WARNING ставка не сохранена (avg_total Дмитрий Кулагин Владимир Скофари)
+01:08:29 WARNING ставка не сохранена (last10, 4a73ba2f12402310): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:29 WARNING ставка не сохранена (last10 Александр Яворский Федор Гимп)
+01:08:29 WARNING ставка не сохранена (avg_total, 4a73ba2f12402310): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:29 WARNING ставка не сохранена (avg_total Александр Яворский Федор Гимп)
+01:08:32 WARNING ставка не сохранена (avg_total, d697a01314a71715): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:32 WARNING ставка не сохранена (avg_total Геннадий Панииван Федор Гимп)
+01:08:34 WARNING ставка не сохранена (avg_total, a8c5d9ed07839cd5): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:34 WARNING ставка не сохранена (avg_total Тимур Пономаренко Сергей Скаченко)
+01:08:35 WARNING ставка не сохранена (avg_total, 999890d6e99460b9): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:35 WARNING ставка не сохранена (avg_total Владимир Скофари Максим Туркану)
+01:08:36 WARNING ставка не сохранена (avg_total, 5ef505e90f0e00c4): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:36 WARNING ставка не сохранена (avg_total Геннадий Панииван Александр Яворский)
+01:08:36 WARNING ставка не сохранена (last10, 5ef505e90f0e00c4): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+01:08:36 WARNING ставка не сохранена (last10 Геннадий Панииван Александр Яворский)
+01:08:38 INFO    сбор линии: sportsbet за 2026-11-22
+01:08:38 INFO    sportsbet: линий тоталов получено: 0
+01:08:38 INFO    дополнительный источник истории: sofascore
+01:08:40 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+01:08:40 INFO    источник коэффициентов: sportsbet.io
+01:08:40 INFO    сбор линии: ts_browser за 2026-11-23
+01:08:40 INFO    ts_browser: линий тоталов получено: 69
+01:08:40 INFO    сбор линии: sportsbet за 2026-11-23
+01:08:40 INFO    sportsbet: линий тоталов получено: 0
+01:08:40 INFO    дополнительный источник истории: sofascore
