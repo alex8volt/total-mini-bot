@@ -1,10 +1,10 @@
 {
  "version": "1.1.1",
- "ts": "2026-11-23T02:12:32+00:00",
- "checked": 50,
- "matched": 48,
- "triggered": 18,
- "new_bets": 41,
+ "ts": "2026-11-23T05:02:04+00:00",
+ "checked": 25,
+ "matched": 23,
+ "triggered": 8,
+ "new_bets": 0,
  "settled": 0,
  "open": 51,
  "balance": 50.0,
@@ -12,7 +12,7 @@
  "roi": 0.0,
  "providers": {
   "ts_browser": 0,
-  "ts": 100,
+  "ts": 50,
   "sportsbet": 0
  },
  "skipped_started": 0,
@@ -21,7 +21,7 @@
  "diagnostics": {
   "note_ts_browser": "на странице 69 линий, но ни одна не попала в окно ближайших 36 ч",
   "note_sportsbet": "на странице 0 линий, но ни одна не попала в окно ближайших 36 ч",
-  "external_budget_left": 0,
+  "external_budget_left": 16,
   "line_ts_browser": {
    "pages_ok": 6,
    "cards": 90,
