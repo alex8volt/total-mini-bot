@@ -1,60 +1,60 @@
-07:11:40 INFO    sportsbet: линий тоталов получено: 0
-07:11:40 INFO    дополнительный источник истории: sofascore
-07:11:40 INFO    дополнительный источник истории: sofascore
-07:11:42 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-07:11:42 INFO    источник коэффициентов: sportsbet.io
-10:00:12 INFO    дополнительный источник истории: sofascore
-10:00:25 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-10:00:25 INFO    источник коэффициентов: sportsbet.io
-10:00:25 INFO    сбор линии: ts_browser за 2026-11-23
-10:00:25 INFO    ts_browser: линий тоталов получено: 0
-10:00:25 INFO    сбор линии: ts за 2026-11-23
-10:00:25 INFO    ts: линий тоталов получено: 25
-10:00:25 WARNING ставка не сохранена (home, 1614e63ef5580215): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:25 WARNING ставка не сохранена (home Никита Фомин Андрей Перетятько)
-10:00:25 WARNING ставка не сохранена (avg_total, 1614e63ef5580215): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:25 WARNING ставка не сохранена (avg_total Никита Фомин Андрей Перетятько)
-10:00:26 WARNING ставка не сохранена (avg_total, 480506e1a0691a61): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:26 WARNING ставка не сохранена (avg_total Анатолий Коваленко Сергей Соломко)
-10:00:26 WARNING ставка не сохранена (last10, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:26 WARNING ставка не сохранена (last10 Сергей Мирошниченко Александр Зякун)
-10:00:26 WARNING ставка не сохранена (home, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:26 WARNING ставка не сохранена (home Сергей Мирошниченко Александр Зякун)
-10:00:26 WARNING ставка не сохранена (avg_total, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:26 WARNING ставка не сохранена (avg_total Сергей Мирошниченко Александр Зякун)
-10:00:27 WARNING ставка не сохранена (home, 89d7dcdfee3ad4ed): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:27 WARNING ставка не сохранена (home Дмитрий Кузьменко Александр Лыман)
-10:00:27 WARNING ставка не сохранена (avg_total, 89d7dcdfee3ad4ed): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:27 WARNING ставка не сохранена (avg_total Дмитрий Кузьменко Александр Лыман)
-10:00:28 WARNING ставка не сохранена (home, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:28 WARNING ставка не сохранена (home Юрий Волков Ярослав Ковшун)
-10:00:28 WARNING ставка не сохранена (away, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:28 WARNING ставка не сохранена (away Юрий Волков Ярослав Ковшун)
-10:00:28 WARNING ставка не сохранена (combined, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:28 WARNING ставка не сохранена (combined Юрий Волков Ярослав Ковшун)
-10:00:28 WARNING ставка не сохранена (avg, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:28 WARNING ставка не сохранена (avg Юрий Волков Ярослав Ковшун)
-10:00:28 WARNING ставка не сохранена (avg_total, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:28 WARNING ставка не сохранена (avg_total Юрий Волков Ярослав Ковшун)
-10:00:30 WARNING ставка не сохранена (avg_total, 61e000157998261f): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:30 WARNING ставка не сохранена (avg_total Олег Куриленко Сергей Малюк)
-10:00:30 WARNING ставка не сохранена (avg_total, f8526d76fc373b46): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:30 WARNING ставка не сохранена (avg_total Александр Липейко Александр Леоненко)
-10:00:30 WARNING ставка не сохранена (last10, f8526d76fc373b46): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:00:30 WARNING ставка не сохранена (last10 Александр Липейко Александр Леоненко)
-10:01:52 WARNING ставка не сохранена (last10, 5a46b0fca13bd32c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:01:52 WARNING ставка не сохранена (last10 Александр Осадчий Владимир Мельников)
-10:01:52 WARNING ставка не сохранена (avg_total, 5a46b0fca13bd32c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-10:01:52 WARNING ставка не сохранена (avg_total Александр Осадчий Владимир Мельников)
-10:01:52 INFO    сбор линии: sportsbet за 2026-11-23
-10:01:52 INFO    sportsbet: линий тоталов получено: 0
-10:01:52 INFO    дополнительный источник истории: sofascore
-10:01:55 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-10:01:55 INFO    источник коэффициентов: sportsbet.io
-10:01:55 INFO    сбор линии: ts_browser за 2026-11-24
-10:01:55 INFO    ts_browser: линий тоталов получено: 0
-10:01:55 INFO    сбор линии: ts за 2026-11-24
-10:01:55 INFO    ts: линий тоталов получено: 25
-10:01:55 INFO    сбор линии: sportsbet за 2026-11-24
-10:01:55 INFO    sportsbet: линий тоталов получено: 0
-10:01:55 INFO    дополнительный источник истории: sofascore
+10:07:53 INFO    источник коэффициентов: sportsbet.io
+10:07:53 INFO    сбор линии: ts за 2026-11-23
+10:07:53 INFO    ts: линий тоталов получено: 25
+10:07:53 WARNING ставка не сохранена (home, 1614e63ef5580215): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:53 WARNING ставка не сохранена (home Никита Фомин Андрей Перетятько)
+10:07:53 WARNING ставка не сохранена (avg_total, 1614e63ef5580215): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:53 WARNING ставка не сохранена (avg_total Никита Фомин Андрей Перетятько)
+10:07:54 WARNING ставка не сохранена (avg_total, 480506e1a0691a61): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:54 WARNING ставка не сохранена (avg_total Анатолий Коваленко Сергей Соломко)
+10:07:54 WARNING ставка не сохранена (last10, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:54 WARNING ставка не сохранена (last10 Сергей Мирошниченко Александр Зякун)
+10:07:54 WARNING ставка не сохранена (home, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:54 WARNING ставка не сохранена (home Сергей Мирошниченко Александр Зякун)
+10:07:54 WARNING ставка не сохранена (avg_total, 3cbebe9854fd69a3): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:54 WARNING ставка не сохранена (avg_total Сергей Мирошниченко Александр Зякун)
+10:07:55 WARNING ставка не сохранена (home, 89d7dcdfee3ad4ed): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:55 WARNING ставка не сохранена (home Дмитрий Кузьменко Александр Лыман)
+10:07:55 WARNING ставка не сохранена (avg_total, 89d7dcdfee3ad4ed): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:55 WARNING ставка не сохранена (avg_total Дмитрий Кузьменко Александр Лыман)
+10:07:56 WARNING ставка не сохранена (home, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:56 WARNING ставка не сохранена (home Юрий Волков Ярослав Ковшун)
+10:07:56 WARNING ставка не сохранена (away, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:56 WARNING ставка не сохранена (away Юрий Волков Ярослав Ковшун)
+10:07:56 WARNING ставка не сохранена (combined, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:56 WARNING ставка не сохранена (combined Юрий Волков Ярослав Ковшун)
+10:07:56 WARNING ставка не сохранена (avg, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:56 WARNING ставка не сохранена (avg Юрий Волков Ярослав Ковшун)
+10:07:56 WARNING ставка не сохранена (avg_total, 6501f6fe01ff6d8d): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:56 WARNING ставка не сохранена (avg_total Юрий Волков Ярослав Ковшун)
+10:07:57 WARNING ставка не сохранена (avg_total, 61e000157998261f): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:57 WARNING ставка не сохранена (avg_total Олег Куриленко Сергей Малюк)
+10:07:57 WARNING ставка не сохранена (avg_total, f8526d76fc373b46): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:57 WARNING ставка не сохранена (avg_total Александр Липейко Александр Леоненко)
+10:07:57 WARNING ставка не сохранена (last10, f8526d76fc373b46): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:57 WARNING ставка не сохранена (last10 Александр Липейко Александр Леоненко)
+10:07:59 WARNING ставка не сохранена (last10, 5a46b0fca13bd32c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:59 WARNING ставка не сохранена (last10 Александр Осадчий Владимир Мельников)
+10:07:59 WARNING ставка не сохранена (avg_total, 5a46b0fca13bd32c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+10:07:59 WARNING ставка не сохранена (avg_total Александр Осадчий Владимир Мельников)
+10:08:00 INFO    сбор линии: sportsbet за 2026-11-23
+10:08:00 INFO    sportsbet: линий тоталов получено: 0
+16:02:10 INFO    дополнительный источник истории: sofascore
+16:02:24 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+16:02:24 INFO    источник коэффициентов: sportsbet.io
+16:02:24 INFO    сбор линии: ts_browser за 2026-11-23
+16:02:24 INFO    ts_browser: линий тоталов получено: 0
+16:02:24 INFO    сбор линии: ts за 2026-11-23
+16:02:24 INFO    ts: линий тоталов получено: 0
+16:02:24 INFO    сбор линии: sportsbet за 2026-11-23
+16:02:24 INFO    sportsbet: линий тоталов получено: 0
+16:02:24 INFO    дополнительный источник истории: sofascore
+16:02:27 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+16:02:27 INFO    источник коэффициентов: sportsbet.io
+16:02:27 INFO    сбор линии: ts_browser за 2026-11-24
+16:02:27 INFO    ts_browser: линий тоталов получено: 0
+16:02:27 INFO    сбор линии: ts за 2026-11-24
+16:02:27 INFO    ts: линий тоталов получено: 0
+16:02:27 INFO    сбор линии: sportsbet за 2026-11-24
+16:02:27 INFO    sportsbet: линий тоталов получено: 0
+16:02:27 INFO    дополнительный источник истории: sofascore
