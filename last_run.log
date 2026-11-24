@@ -1,22 +1,3 @@
-10:06:02 INFO    сбор линии: sportsbet за 2026-11-24
-10:06:02 INFO    sportsbet: линий тоталов получено: 0
-10:06:02 INFO    дополнительный источник истории: sofascore
-10:06:27 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Page.goto: Timeout 25000ms exceeded.
-Call log:
-  - navigating to "https://tennis-score.pro/up-games/", waiting until "domcontentloaded"
-)
-10:06:27 WARNING браузер не дал линию (браузер: матчей на странице 0) — переключаюсь на обычный запрос
-10:06:27 INFO    источник коэффициентов: sportsbet.io
-10:06:27 INFO    сбор линии: ts за 2026-11-25
-10:06:27 INFO    ts: линий тоталов получено: 0
-10:06:27 INFO    сбор линии: sportsbet за 2026-11-25
-10:06:27 INFO    sportsbet: линий тоталов получено: 0
-10:06:27 INFO    дополнительный источник истории: sofascore
-16:07:04 INFO    дополнительный источник истории: sofascore
-16:07:30 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Page.goto: Timeout 25000ms exceeded.
-Call log:
-  - navigating to "https://tennis-score.pro/up-games/", waiting until "domcontentloaded"
-)
 16:07:30 WARNING браузер не дал линию (браузер: матчей на странице 0) — переключаюсь на обычный запрос
 16:07:30 INFO    источник коэффициентов: sportsbet.io
 16:07:30 INFO    сбор линии: ts за 2026-11-24
@@ -58,3 +39,22 @@ Call log:
 22:10:09 INFO    сбор линии: sportsbet за 2026-11-25
 22:10:09 INFO    sportsbet: линий тоталов получено: 0
 22:10:09 INFO    дополнительный источник истории: sofascore
+04:11:16 INFO    дополнительный источник истории: sofascore
+04:11:29 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+04:11:29 INFO    источник коэффициентов: sportsbet.io
+04:11:29 INFO    сбор линии: ts_browser за 2026-11-25
+04:11:29 INFO    ts_browser: линий тоталов получено: 0
+04:11:45 INFO    сбор линии: ts за 2026-11-25
+04:11:45 INFO    ts: линий тоталов получено: 0
+04:11:45 INFO    сбор линии: sportsbet за 2026-11-25
+04:11:45 INFO    sportsbet: линий тоталов получено: 0
+04:11:45 INFO    дополнительный источник истории: sofascore
+04:11:48 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+04:11:48 INFO    источник коэффициентов: sportsbet.io
+04:11:48 INFO    сбор линии: ts_browser за 2026-11-26
+04:11:48 INFO    ts_browser: линий тоталов получено: 0
+04:11:48 INFO    сбор линии: ts за 2026-11-26
+04:11:48 INFO    ts: линий тоталов получено: 0
+04:11:48 INFO    сбор линии: sportsbet за 2026-11-26
+04:11:48 INFO    sportsbet: линий тоталов получено: 0
+04:11:48 INFO    дополнительный источник истории: sofascore
