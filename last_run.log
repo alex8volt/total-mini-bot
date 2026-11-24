@@ -1,26 +1,3 @@
-22:02:55 INFO    сбор линии: ts за 2026-11-23
-22:02:55 INFO    ts: линий тоталов получено: 0
-22:02:55 INFO    сбор линии: sportsbet за 2026-11-23
-22:02:55 INFO    sportsbet: линий тоталов получено: 0
-22:02:55 INFO    дополнительный источник истории: sofascore
-22:02:58 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-22:02:58 INFO    источник коэффициентов: sportsbet.io
-22:02:58 INFO    сбор линии: ts_browser за 2026-11-24
-22:02:58 INFO    ts_browser: линий тоталов получено: 0
-22:02:58 INFO    сбор линии: ts за 2026-11-24
-22:02:58 INFO    ts: линий тоталов получено: 0
-22:02:58 INFO    сбор линии: sportsbet за 2026-11-24
-22:02:58 INFO    sportsbet: линий тоталов получено: 0
-22:02:58 INFO    дополнительный источник истории: sofascore
-04:03:15 INFO    дополнительный источник истории: sofascore
-04:03:40 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Page.goto: Timeout 25000ms exceeded.
-Call log:
-  - navigating to "https://tennis-score.pro/up-games/", waiting until "domcontentloaded"
-)
-04:03:40 WARNING браузер не дал линию (браузер: матчей на странице 0) — переключаюсь на обычный запрос
-04:03:40 INFO    источник коэффициентов: sportsbet.io
-04:03:40 INFO    сбор линии: ts за 2026-11-24
-04:03:40 INFO    ts: линий тоталов получено: 0
 04:04:06 INFO    сбор линии: sportsbet за 2026-11-24
 04:04:06 INFO    sportsbet: линий тоталов получено: 0
 04:04:06 INFO    дополнительный источник истории: sofascore
@@ -58,3 +35,26 @@ Call log:
 10:06:27 INFO    сбор линии: sportsbet за 2026-11-25
 10:06:27 INFO    sportsbet: линий тоталов получено: 0
 10:06:27 INFO    дополнительный источник истории: sofascore
+16:07:04 INFO    дополнительный источник истории: sofascore
+16:07:30 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://tennis-score.pro/up-games/", waiting until "domcontentloaded"
+)
+16:07:30 WARNING браузер не дал линию (браузер: матчей на странице 0) — переключаюсь на обычный запрос
+16:07:30 INFO    источник коэффициентов: sportsbet.io
+16:07:30 INFO    сбор линии: ts за 2026-11-24
+16:07:30 INFO    ts: линий тоталов получено: 0
+16:07:55 INFO    сбор линии: sportsbet за 2026-11-24
+16:07:55 INFO    sportsbet: линий тоталов получено: 0
+16:07:55 INFO    дополнительный источник истории: sofascore
+16:08:20 WARNING браузер: не удалось открыть https://tennis-score.pro/up-games/ (Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://tennis-score.pro/up-games/", waiting until "domcontentloaded"
+)
+16:08:20 WARNING браузер не дал линию (браузер: матчей на странице 0) — переключаюсь на обычный запрос
+16:08:20 INFO    источник коэффициентов: sportsbet.io
+16:08:20 INFO    сбор линии: ts за 2026-11-25
+16:08:20 INFO    ts: линий тоталов получено: 0
+16:08:20 INFO    сбор линии: sportsbet за 2026-11-25
+16:08:20 INFO    sportsbet: линий тоталов получено: 0
+16:08:20 INFO    дополнительный источник истории: sofascore
