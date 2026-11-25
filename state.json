@@ -1,17 +1,19 @@
 {
  "version": "1.2.0",
- "ts": "2026-11-25T07:45:11+00:00",
- "checked": 46,
- "matched": 39,
+ "ts": "2026-11-25T07:53:05+00:00",
+ "db_path": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot\\data\\total_bot.sqlite3",
+ "project_dir": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot",
+ "checked": 44,
+ "matched": 37,
  "triggered": 3,
  "new_bets": 0,
- "settled": 0,
- "open": 3,
- "balance": 50.0,
- "pnl": 0,
- "roi": 0.0,
+ "settled": 21,
+ "open": 33,
+ "balance": 49.03,
+ "pnl": -0.97,
+ "roi": -0.0462,
  "providers": {
-  "ts_browser": 92,
+  "ts_browser": 88,
   "sportsbet": 0
  },
  "skipped_started": 0,
@@ -23,41 +25,43 @@
   "line_ts_browser": {
    "pages_ok": 6,
    "cards": 75,
-   "cards_by_league": 46,
+   "cards_by_league": 44,
    "cards_with_totals": 73,
    "leagues": [
-    "Мастерс. Россия",
-    "Сетка Кап. Прага",
-    "Лига Про. Чехия",
-    "Сетка Кап",
     "Мастерс. Испания",
+    "Мастерс. Россия",
+    "Лига Про. Чехия",
     "WTT. Фидер. Дюссельдорф II. Женщины",
+    "Сетка Кап",
     "Кубок ТТ. Чехия",
-    "Сетка Кап. Париж",
     "WTT. Фидер. Дюссельдорф II",
     "Сетка Кап. Женщины",
+    "Сетка Кап. Париж",
+    "Сетка Кап. Прага",
     "Лига Про",
-    "Лига Про. Минск",
-    "Россия. Лига ДВ"
+    "Россия. Лига ДВ",
+    "Лига Про. Минск"
    ],
    "dates": {
     "2026-11-25": 75
    },
-   "sample_card": "турнир: Кубок ТТ. Чехия | тоталы: [74.5, 75.5, 76.5] | время: '25.11 10:40' | старт: 2026-11-25T07:40:00+00:00",
+   "sample_card": "турнир: Сетка Кап | тоталы: [74.5, 75.5, 76.5] | время: '25.11 10:50' | старт: 2026-11-25T07:50:00+00:00",
    "sample_other": "турнир: Мастерс. Испания | время: '25.11 10:50' | старт: 2026-11-25T07:50:00+00:00",
    "errors": []
   }
  },
  "settle": {
   "days": [
+   "2026-11-22",
+   "2026-11-23",
    "2026-11-25"
   ],
   "fetched_rows": 0,
-  "results_total": 100,
-  "no_result": 3,
+  "results_total": 284,
+  "no_result": 33,
   "voided": 0,
-  "settled": 0,
-  "pending": 3,
+  "settled": 21,
+  "pending": 33,
   "void": 0
  },
  "last_error": null
