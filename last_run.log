@@ -1,25 +1,3 @@
-12:44:10 INFO    ts_browser: линий тоталов получено: 46
-12:44:18 WARNING ставка не сохранена (avg_total, 340f4465ca96960a): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-12:44:18 WARNING ставка не сохранена (avg_total Александр Селюченко Анатолий Левшин)
-12:44:45 WARNING ставка не сохранена (avg_total, 979188f1f8c04099): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-12:44:45 WARNING ставка не сохранена (avg_total Александр Зякун Олег Куриленко)
-12:44:45 WARNING ставка не сохранена (avg_total, 84374681f74fcfcc): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-12:44:45 WARNING ставка не сохранена (avg_total Сергей Гончаренко Николай Заволока)
-12:44:49 INFO    сбор линии: sportsbet за 2026-11-25
-12:44:49 INFO    sportsbet: линий тоталов получено: 0
-12:44:49 INFO    дополнительный источник истории: sofascore
-12:44:51 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-12:44:51 INFO    источник коэффициентов: sportsbet.io
-12:44:51 INFO    сбор линии: ts_browser за 2026-11-26
-12:44:51 INFO    ts_browser: линий тоталов получено: 46
-12:44:51 INFO    сбор линии: sportsbet за 2026-11-26
-12:44:51 INFO    sportsbet: линий тоталов получено: 0
-12:44:51 INFO    дополнительный источник истории: sofascore
-12:47:44 INFO    дополнительный источник истории: sofascore
-12:47:48 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-12:47:48 INFO    источник коэффициентов: sportsbet.io
-12:47:48 INFO    сбор линии: ts_browser за 2026-11-25
-12:48:02 INFO    ts_browser: линий тоталов получено: 44
 12:51:48 WARNING ставка не сохранена (avg_total, 340f4465ca96960a): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
 12:51:48 WARNING ставка не сохранена (avg_total Александр Селюченко Анатолий Левшин)
 12:51:50 WARNING ставка не сохранена (avg_total, 979188f1f8c04099): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
@@ -58,3 +36,25 @@
 12:57:29 INFO    сбор линии: sportsbet за 2026-11-26
 12:57:29 INFO    sportsbet: линий тоталов получено: 0
 12:57:29 INFO    дополнительный источник истории: sofascore
+12:59:11 INFO    восстановлено ставок из снимка: 21
+12:59:11 INFO    дополнительный источник истории: sofascore
+12:59:15 INFO    источник коэффициентов: браузер (браузер: матчей на странице 14)
+12:59:15 INFO    источник коэффициентов: sportsbet.io
+12:59:15 INFO    сбор линии: ts_browser за 2026-11-25
+12:59:29 INFO    ts_browser: линий тоталов получено: 42
+13:03:13 WARNING ставка не сохранена (avg_total, 340f4465ca96960a): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+13:03:13 WARNING ставка не сохранена (avg_total Александр Селюченко Анатолий Левшин)
+13:03:15 WARNING ставка не сохранена (avg_total, 979188f1f8c04099): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+13:03:15 WARNING ставка не сохранена (avg_total Александр Зякун Олег Куриленко)
+13:03:15 WARNING ставка не сохранена (avg_total, 84374681f74fcfcc): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+13:03:15 WARNING ставка не сохранена (avg_total Сергей Гончаренко Николай Заволока)
+13:03:18 INFO    сбор линии: sportsbet за 2026-11-25
+13:03:18 INFO    sportsbet: линий тоталов получено: 0
+13:03:18 INFO    дополнительный источник истории: sofascore
+13:03:22 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+13:03:22 INFO    источник коэффициентов: sportsbet.io
+13:03:22 INFO    сбор линии: ts_browser за 2026-11-26
+13:03:22 INFO    ts_browser: линий тоталов получено: 42
+13:03:22 INFO    сбор линии: sportsbet за 2026-11-26
+13:03:22 INFO    sportsbet: линий тоталов получено: 0
+13:03:22 INFO    дополнительный источник истории: sofascore
