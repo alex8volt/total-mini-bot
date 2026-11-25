@@ -1,10 +1,10 @@
 {
  "version": "1.2.0",
- "ts": "2026-11-25T07:40:03+00:00",
+ "ts": "2026-11-25T07:42:11+00:00",
  "checked": 46,
- "matched": 37,
+ "matched": 39,
  "triggered": 3,
- "new_bets": 3,
+ "new_bets": 0,
  "settled": 0,
  "open": 3,
  "balance": 50.0,
