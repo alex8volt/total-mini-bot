@@ -1,17 +1,17 @@
 {
  "version": "1.4.0",
- "ts": "2026-11-27T05:52:04+00:00",
+ "ts": "2026-11-27T05:52:45+00:00",
  "db_path": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot\\data\\total_bot.sqlite3",
  "project_dir": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot",
  "checked": 54,
  "matched": 48,
  "triggered": 14,
- "new_bets": 42,
+ "new_bets": 3,
  "settled": 3,
  "open": 174,
- "balance": 52.8,
- "pnl": 2.8,
- "roi": 0.0337,
+ "balance": 55.32,
+ "pnl": 5.32,
+ "roi": 0.0619,
  "providers": {
   "ts_browser": 108,
   "sportsbet": 0
