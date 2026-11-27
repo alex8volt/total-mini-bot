@@ -1,28 +1,28 @@
 {
- "version": "1.5.0",
- "ts": "2026-11-27T08:44:47+00:00",
+ "version": "1.5.1",
+ "ts": "2026-11-27T17:36:45+00:00",
  "db_path": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot\\data\\total_bot.sqlite3",
  "project_dir": "C:\\Users\\user\\Desktop\\total_bot(1)\\total_bot",
- "checked": 48,
- "matched": 40,
- "triggered": 12,
- "new_bets": 2,
- "settled": 25,
- "open": 237,
- "balance": 302.18,
+ "checked": 51,
+ "matched": 48,
+ "triggered": 6,
+ "new_bets": 14,
+ "settled": 3,
+ "open": 49,
+ "balance": 224.87,
  "bank": 300.0,
  "balance_per_rule": {
-  "last10": 41.74,
-  "home": 61.06,
-  "away": 53.32,
-  "combined": 53.32,
-  "avg": 53.32,
-  "avg_total": 39.42
+  "last10": 21.22,
+  "home": 50.09,
+  "away": 47.4,
+  "combined": 44.66,
+  "avg": 44.66,
+  "avg_total": 16.84
  },
- "pnl": 2.18,
- "roi": 0.0196,
+ "pnl": -75.13,
+ "roi": -0.2223,
  "providers": {
-  "ts_browser": 96,
+  "ts_browser": 102,
   "sportsbet": 0
  },
  "skipped_started": 0,
@@ -34,29 +34,27 @@
   "line_ts_browser": {
    "pages_ok": 6,
    "cards": 90,
-   "cards_by_league": 49,
-   "cards_with_totals": 89,
+   "cards_by_league": 51,
+   "cards_with_totals": 90,
    "leagues": [
-    "Кубок ТТ. Чехия",
-    "Мастерс. Суперлига",
-    "Мастерс. Россия",
-    "Лига Про. Чехия",
-    "Сетка Кап. Прага",
-    "Сетка Кап",
     "Лига Про",
+    "Лига Про. Чехия",
+    "Сетка Кап",
     "Лига Про. Минск",
-    "Челленджер серия",
-    "WTT. Фидер. Дюссельдорф II. Женщины",
-    "Россия. Лига ДВ",
-    "Сетка Кап. Париж",
-    "Мастерс. Аргентина",
-    "WTT. Фидер. Дюссельдорф II"
+    "Сетка Кап. Молдова",
+    "Мастерс. Беларусь",
+    "Сетка Кап. Женщины",
+    "Кубок ТТ. Чехия",
+    "Сетка Кап. Прага",
+    "Мастерс. Польша. Женщины",
+    "Мастерс. Россия",
+    "Сетка Кап. Париж"
    ],
    "dates": {
     "2026-11-27": 90
    },
-   "sample_card": "турнир: Кубок ТТ. Чехия | тоталы: [74.5, 75.5, 76.5] | время: '27.11 11:40' | старт: 2026-11-27T08:40:00+00:00",
-   "sample_other": "турнир: Лига Про | время: '27.11 11:45' | старт: 2026-11-27T08:45:00+00:00",
+   "sample_card": "турнир: Сетка Кап. Молдова | тоталы: [75.5, 76.5, 77.5] | время: '27.11 20:28' | старт: 2026-11-27T17:28:00+00:00",
+   "sample_other": "турнир: Лига Про | время: '27.11 20:30' | старт: 2026-11-27T17:30:00+00:00",
    "errors": []
   }
  },
@@ -68,33 +66,188 @@
    "2026-11-26",
    "2026-11-27"
   ],
-  "fetched_rows": 0,
-  "results_total": 401,
-  "no_result": 237,
+  "fetched_rows": 607,
+  "results_total": 644,
+  "no_result": 49,
   "voided": 0,
   "sources": {
+   "ts_match": 0,
    "betsapi": 0,
-   "live24": 0
+   "live24": 0,
+   "sofascore_res": 0
   },
-  "pending_sample": [
-   {
-    "bet": "Мартин Йирасек — Ладислав Восика",
-    "day": "2026-11-22",
-    "closest": "Мартин Йирасек — Ондрей Прос"
+  "source_diag": {
+   "ts_match": {
+    "source": "ts_match",
+    "days": {
+     "2026-11-22": {
+      "links": 1983,
+      "pairs": 1,
+      "matched": 0
+     },
+     "2026-11-23": {
+      "links": 1988,
+      "pairs": 7,
+      "matched": 0
+     },
+     "2026-11-25": {
+      "links": 2075,
+      "pairs": 4,
+      "matched": 0
+     },
+     "2026-11-26": {
+      "links": 2039,
+      "pairs": 1,
+      "matched": 0
+     },
+     "2026-11-27": {
+      "links": 1626,
+      "pairs": 6,
+      "matched": 0
+     }
+    },
+    "blocked": false
    },
+   "betsapi": {
+    "source": "betsapi",
+    "days": {
+     "2026-11-22": {
+      "html": 0,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-23": {
+      "html": 0,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-25": {
+      "html": 0,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-26": {
+      "html": 0,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-27": {
+      "html": 0,
+      "matches": 0,
+      "with_points": 0
+     }
+    },
+    "blocked": true,
+    "errors": [
+     "https://betsapi.com/ce/table-tennis: HTTP 403 на https://betsapi.com/ce/table-tennis",
+     "https://betsapi.com/ce/table-tennis?date=2026-11-22: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026-11-22",
+     "https://betsapi.com/ce/table-tennis?date=2026.11.22: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026.11.22",
+     "https://betsapi.com/ce/table-tennis/2026-11-22: HTTP 403 на https://betsapi.com/ce/table-tennis/2026-11-22",
+     "https://betsapi.com/ce/table-tennis: HTTP 403 на https://betsapi.com/ce/table-tennis",
+     "https://betsapi.com/ce/table-tennis?date=2026-11-23: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026-11-23",
+     "https://betsapi.com/ce/table-tennis?date=2026.11.23: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026.11.23",
+     "https://betsapi.com/ce/table-tennis/2026-11-23: HTTP 403 на https://betsapi.com/ce/table-tennis/2026-11-23",
+     "https://betsapi.com/ce/table-tennis: HTTP 403 на https://betsapi.com/ce/table-tennis",
+     "https://betsapi.com/ce/table-tennis?date=2026-11-25: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026-11-25",
+     "https://betsapi.com/ce/table-tennis?date=2026.11.25: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026.11.25",
+     "https://betsapi.com/ce/table-tennis/2026-11-25: HTTP 403 на https://betsapi.com/ce/table-tennis/2026-11-25",
+     "https://betsapi.com/ce/table-tennis: HTTP 403 на https://betsapi.com/ce/table-tennis",
+     "https://betsapi.com/ce/table-tennis?date=2026-11-26: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026-11-26",
+     "https://betsapi.com/ce/table-tennis?date=2026.11.26: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026.11.26",
+     "https://betsapi.com/ce/table-tennis/2026-11-26: HTTP 403 на https://betsapi.com/ce/table-tennis/2026-11-26",
+     "https://betsapi.com/ce/table-tennis: HTTP 403 на https://betsapi.com/ce/table-tennis",
+     "https://betsapi.com/ce/table-tennis?date=2026-11-27: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026-11-27",
+     "https://betsapi.com/ce/table-tennis?date=2026.11.27: HTTP 403 на https://betsapi.com/ce/table-tennis?date=2026.11.27",
+     "https://betsapi.com/ce/table-tennis/2026-11-27: HTTP 403 на https://betsapi.com/ce/table-tennis/2026-11-27"
+    ]
+   },
+   "live24": {
+    "source": "live24",
+    "days": {
+     "2026-11-22": {
+      "html": 250652,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-23": {
+      "html": 250652,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-25": {
+      "html": 250652,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-26": {
+      "html": 250652,
+      "matches": 0,
+      "with_points": 0
+     },
+     "2026-11-27": {
+      "html": 250652,
+      "matches": 0,
+      "with_points": 0
+     }
+    },
+    "blocked": false
+   },
+   "sofascore_res": {
+    "source": "sofascore_res",
+    "days": {
+     "2026-11-22": {
+      "events": 0,
+      "matched": 0
+     },
+     "2026-11-23": {
+      "events": 0,
+      "matched": 0
+     },
+     "2026-11-25": {
+      "events": 0,
+      "matched": 0
+     },
+     "2026-11-26": {
+      "events": 0,
+      "matched": 0
+     },
+     "2026-11-27": {
+      "events": 0,
+      "matched": 0
+     }
+    },
+    "blocked": false,
+    "errors": [
+     "2026-11-21: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-21: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-22: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-22: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-23: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-23: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-24: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-24: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-25: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-25: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-26: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-26: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+     "2026-11-27: не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-27: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+    ]
+   }
+  },
+  "past_due": 38,
+  "pending_sample": [
    {
     "bet": "Дмитрий Кулагин — Максим Туркану",
     "day": "2026-11-22",
     "closest": "Дмитрий Кулагин — Владимир Скофари"
    },
    {
-    "bet": "Владимир Скофари — Максим Туркану",
-    "day": "2026-11-22",
-    "closest": "Вячеслав Сырбу — Максим Туркану"
+    "bet": "Геннадий Панииван — Александр Яворский",
+    "day": "2026-11-23",
+    "closest": "Геннадий Панииван — Вадим Урекян"
+   },
+   {
+    "bet": "Геннадий Панииван — Александр Яворский",
+    "day": "2026-11-23",
+    "closest": "Геннадий Панииван — Вадим Урекян"
    }
   ],
-  "settled": 25,
-  "pending": 237,
+  "settled": 3,
+  "pending": 49,
   "void": 0
  },
  "last_error": null
