@@ -1,60 +1,60 @@
-13:43:42 WARNING ставка не сохранена (last10, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (last10 Степан Григоренко Ярослав Ковшун)
-13:43:42 WARNING ставка не сохранена (home, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (home Степан Григоренко Ярослав Ковшун)
-13:43:42 WARNING ставка не сохранена (away, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (away Степан Григоренко Ярослав Ковшун)
-13:43:42 WARNING ставка не сохранена (combined, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (combined Степан Григоренко Ярослав Ковшун)
-13:43:42 WARNING ставка не сохранена (avg, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (avg Степан Григоренко Ярослав Ковшун)
-13:43:42 WARNING ставка не сохранена (avg_total, e05a8a29a8bf1065): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:42 WARNING ставка не сохранена (avg_total Степан Григоренко Ярослав Ковшун)
-13:43:43 WARNING ставка не сохранена (home, 5c0f9611cbbae87c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:43 WARNING ставка не сохранена (home Максим Стеценко Александр Мыцык)
-13:43:43 WARNING ставка не сохранена (avg_total, 5c0f9611cbbae87c): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:43 WARNING ставка не сохранена (avg_total Максим Стеценко Александр Мыцык)
-13:43:46 WARNING ставка не сохранена (away, e7f3a0e65150d2e1): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (away Александр Лыман Сергей Мирошниченко)
-13:43:46 WARNING ставка не сохранена (avg_total, e7f3a0e65150d2e1): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (avg_total Александр Лыман Сергей Мирошниченко)
-13:43:46 WARNING ставка не сохранена (last10, 2491e4311444dc07): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (last10 Анатолий Коваленко Сергей Схабицкий)
-13:43:46 WARNING ставка не сохранена (home, 2491e4311444dc07): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (home Анатолий Коваленко Сергей Схабицкий)
-13:43:46 WARNING ставка не сохранена (combined, 2491e4311444dc07): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (combined Анатолий Коваленко Сергей Схабицкий)
-13:43:46 WARNING ставка не сохранена (avg, 2491e4311444dc07): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (avg Анатолий Коваленко Сергей Схабицкий)
-13:43:46 WARNING ставка не сохранена (avg_total, 2491e4311444dc07): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (avg_total Анатолий Коваленко Сергей Схабицкий)
-13:43:46 WARNING ставка не сохранена (home, 2aa8fd8363f99520): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (home Александр Стороженко Денис Мальцев)
-13:43:46 WARNING ставка не сохранена (avg_total, 2aa8fd8363f99520): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:46 WARNING ставка не сохранена (avg_total Александр Стороженко Денис Мальцев)
-13:43:47 WARNING ставка не сохранена (avg_total, 88671d124fd014db): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:47 WARNING ставка не сохранена (avg_total Владимир Саволюк Максим Мрых)
-13:43:47 WARNING ставка не сохранена (last10, 723a8f9c4341dc1e): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:47 WARNING ставка не сохранена (last10 Валерий Колесников Степан Григоренко)
-13:43:47 WARNING ставка не сохранена (avg_total, 723a8f9c4341dc1e): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:47 WARNING ставка не сохранена (avg_total Валерий Колесников Степан Григоренко)
-13:43:47 WARNING ставка не сохранена (home, 10e1dd6b1e290167): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:47 WARNING ставка не сохранена (home Александр Зякун Дмитрий Кузьменко)
-13:43:47 WARNING ставка не сохранена (avg_total, 10e1dd6b1e290167): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:47 WARNING ставка не сохранена (avg_total Александр Зякун Дмитрий Кузьменко)
-13:43:48 WARNING ставка не сохранена (home, d5affcd236a20184): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:48 WARNING ставка не сохранена (home Владимир Мельников Михаил Халенко)
-13:43:48 WARNING ставка не сохранена (avg_total, d5affcd236a20184): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:48 WARNING ставка не сохранена (avg_total Владимир Мельников Михаил Халенко)
-13:43:49 WARNING ставка не сохранена (avg_total, 906b8ef1297f72dd): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
-13:43:49 WARNING ставка не сохранена (avg_total Александр Лыман Олег Куриленко)
-13:43:50 INFO    сбор линии: sportsbet за 2026-11-27
-13:43:50 INFO    sportsbet: линий тоталов получено: 0
-13:43:50 INFO    дополнительный источник истории: sofascore
-13:43:52 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
-13:43:52 INFO    источник коэффициентов: sportsbet.io
-13:43:52 INFO    сбор линии: ts_browser за 2026-11-28
-13:43:52 INFO    ts_browser: линий тоталов получено: 48
-13:43:52 INFO    сбор линии: sportsbet за 2026-11-28
-13:43:52 INFO    sportsbet: линий тоталов получено: 0
-13:43:52 INFO    дополнительный источник истории: sofascore
+	Current:  <greenlet.greenlet object at 0x0000000005A4DBC0 (otid=0x0000000003FF52E0) current active started main>
+	Expected: <greenlet.greenlet object at 0x0000000004463300 (otid=0x0000000003D94A90) suspended active started main>)
+22:31:39 WARNING sofascore: события за 2026-11-26 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-26: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:31:39 INFO    дополнительный источник истории: sofascore
+22:31:44 INFO    список матчей за 2026-11-27: 1626 ссылок
+22:31:56 INFO    страницы матчей за 2026-11-27: нашлось 36 из 42 пар
+22:31:56 INFO    ts_match: нашлось результатов за 2026-11-27: 36
+22:32:02 WARNING браузер: не удалось открыть https://betsapi.com/ce/table-tennis (Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x0000000005A4DBC0 (otid=0x0000000003FF52E0) current active started main>
+	Expected: <greenlet.greenlet object at 0x0000000004463300 (otid=0x0000000003D94A90) suspended active started main>)
+22:32:02 WARNING браузер: не удалось открыть https://betsapi.com/ce/table-tennis?date=2026-11-27 (Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x0000000005A4DBC0 (otid=0x0000000003FF52E0) current active started main>
+	Expected: <greenlet.greenlet object at 0x0000000004463300 (otid=0x0000000003D94A90) suspended active started main>)
+22:32:02 INFO    новый сигнал [avg_total/ТБ] ts_browser (Сетка Кап): Александр Бондарчук - Александр Ивчук ТБ69.50 @1.84 (ТБ: средний тотал 71.9 выше линии 69.5 на +2.4 (нужно >= +0.0))
+22:32:02 INFO    новый сигнал [last10/ТМ] ts_browser (Сетка Кап): Александр Бондарчук - Александр Ивчук ТМ69.50 @1.82 (ТМ: тотал меньше линии в 70% последних 10 игр пары (порог 70%))
+22:32:07 INFO    новый сигнал [home/ТБ] ts_browser (Сетка Кап): Александр Найда - Роман Гноевой ТБ75.50 @1.81 (ТБ: тотал больше линии в 70% последних 10 игр хозяина (порог 70%))
+22:32:07 WARNING ставка не сохранена (avg_total, a7d81b19c34e9e51): UNIQUE constraint failed: bets.event_key, bets.provider, bets.rule, bets.status
+22:32:07 WARNING ставка не сохранена (avg_total Александр Найда Роман Гноевой)
+22:32:10 INFO    новый сигнал [home/ТМ] ts_browser (Сетка Кап): Сергей Скаченко - Александр Мелашенко ТМ75.50 @1.85 (ТМ: тотал меньше линии в 70% последних 10 игр хозяина (порог 70%))
+22:32:10 INFO    новый сигнал [avg_total/ТМ] ts_browser (Сетка Кап): Сергей Скаченко - Александр Мелашенко ТМ75.50 @1.85 (ТМ: средний тотал 71.3 ниже линии 75.5 на -4.2 (нужно <= -0.0))
+22:32:10 INFO    новый сигнал [away/ТБ] ts_browser (Сетка Кап): Александр Бондарчук - Александр Журба ТБ75.50 @1.80 (ТБ: тотал больше линии в 80% последних 10 игр гостя (порог 70%))
+22:32:10 INFO    новый сигнал [avg_total/ТБ] ts_browser (Сетка Кап): Александр Бондарчук - Александр Журба ТБ75.50 @1.80 (ТБ: средний тотал 76.8 выше линии 75.5 на +1.2 (нужно >= +0.0))
+22:32:11 INFO    новый сигнал [last10/ТМ] ts_browser (Сетка Кап): Александр Селюченко - Владимир Вороненков ТМ76.50 @1.80 (ТМ: тотал меньше линии в 80% последних 10 игр пары (порог 70%))
+22:32:11 INFO    новый сигнал [away/ТМ] ts_browser (Сетка Кап): Александр Селюченко - Владимир Вороненков ТМ76.50 @1.80 (ТМ: тотал меньше линии в 80% последних 10 игр гостя (порог 70%))
+22:32:11 INFO    новый сигнал [combined/ТМ] ts_browser (Сетка Кап): Александр Селюченко - Владимир Вороненков ТМ76.50 @1.80 (ТМ: тотал меньше линии в 70% по пулу из 20 игр (порог 70%))
+22:32:11 INFO    новый сигнал [avg/ТМ] ts_browser (Сетка Кап): Александр Селюченко - Владимир Вороненков ТМ76.50 @1.80 (ТМ: среднее двух долей 70% (порог 70%))
+22:32:11 INFO    новый сигнал [avg_total/ТМ] ts_browser (Сетка Кап): Александр Селюченко - Владимир Вороненков ТМ76.50 @1.80 (ТМ: средний тотал 71.2 ниже линии 76.5 на -5.3 (нужно <= -0.0))
+22:32:13 INFO    новый сигнал [avg_total/ТБ] ts_browser (Сетка Кап): Виталий Хамурда - Александр Найда ТБ76.50 @1.86 (ТБ: средний тотал 76.6 выше линии 76.5 на +0.1 (нужно >= +0.0))
+22:32:13 INFO    новый сигнал [home/ТМ] ts_browser (Сетка Кап): Виталий Хамурда - Александр Найда ТМ76.50 @1.80 (ТМ: тотал меньше линии в 70% последних 10 игр хозяина (порог 70%))
+22:32:16 WARNING sofascore: события за 2026-11-27 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-27: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:32:20 INFO    сбор линии: sportsbet за 2026-11-27
+22:32:20 INFO    sportsbet: линий тоталов получено: 0
+22:32:20 INFO    дополнительный источник истории: sofascore
+22:32:23 INFO    источник коэффициентов: браузер (браузер: матчей на странице 15)
+22:32:23 INFO    источник коэффициентов: sportsbet.io
+22:32:23 INFO    сбор линии: ts_browser за 2026-11-28
+22:32:23 INFO    ts_browser: линий тоталов получено: 51
+22:32:23 INFO    сбор линии: sportsbet за 2026-11-28
+22:32:23 INFO    sportsbet: линий тоталов получено: 0
+22:32:23 INFO    дополнительный источник истории: sofascore
+22:32:23 INFO    дополнительный источник истории: sofascore
+22:32:25 INFO    список матчей за 2026-11-22: 1983 ссылок
+22:33:09 WARNING браузер: проверка Cloudflare не пройдена за 30 с (https://betsapi.com/ce/table-tennis)
+22:33:39 WARNING браузер: проверка Cloudflare не пройдена за 30 с (https://betsapi.com/ce/table-tennis?date=2026-11-22)
+22:33:51 WARNING sofascore: события за 2026-11-21 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-21: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:34:03 WARNING sofascore: события за 2026-11-22 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-22: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:34:03 INFO    дополнительный источник истории: sofascore
+22:34:07 INFO    список матчей за 2026-11-23: 1988 ссылок
+22:34:30 WARNING sofascore: события за 2026-11-23 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-23: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:34:30 INFO    дополнительный источник истории: sofascore
+22:34:33 INFO    список матчей за 2026-11-25: 2075 ссылок
+22:34:55 WARNING sofascore: события за 2026-11-24 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-24: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:35:07 WARNING sofascore: события за 2026-11-25 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-25: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:35:07 INFO    дополнительный источник истории: sofascore
+22:35:10 INFO    список матчей за 2026-11-26: 2039 ссылок
+22:35:32 WARNING sofascore: события за 2026-11-26 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-26: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:35:32 INFO    дополнительный источник истории: sofascore
+22:35:34 INFO    список матчей за 2026-11-27: 1626 ссылок
+22:36:11 WARNING sofascore: события за 2026-11-27 не получены (не удалось получить https://api.sofascore.com/api/v1/sport/table-tennis/scheduled-events/2026-11-27: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>)
+22:36:13 INFO    стартовый пересчёт: рассчитано 3, ждут 49
